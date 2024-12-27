@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;1,300;1,400&family=Saira+Condensed:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Kufi+Arabic:wght@300&family=Pacifico&display=swap");
+
+/* stylelint-disable selector-list-comma-newline-after */
+body {
+  background: linear-gradient(to right, #1e2225, #182130, #0e0e11);
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.addmanga {
+  margin-left: 30px;
+  width: 400px;
+  background-color: white;
+}
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  background: linear-gradient(to right, #adbbc6, #0e1424, #647796);
+  bottom: 0px;
+  height: 25px;
+}
+.top-bar span {
+  color: #ffffff;
+}
+.top-bar ul {
+  list-style: none;
+  display: flex;
+  font-size: large;
+  margin: 2px;
+}
+.top-bar li {
+  margin: 0 5px;
+}
+.top-bar a {
+  color: #ffffff;
+}
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  background: linear-gradient(to right, #adbbc6, #0e1424, #647796);
+  bottom: 0px;
+  height: 25px;
+}
+.top-par3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  background: #0e0d0d;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: #fff9f9;
+  text-decoration: none;
+}
+.top-bar a:hover {
+  color: #080808;
+}
+nav a:hover {
+  color: #647796;
+}
+.searchbtn:hover {
+  color: #647796;
+}
+a span:hover {
+  color: #647796;
+}
+.logo {
+  flex: 1;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.logo a:hover {
+  color: rgb(22, 22, 21);
+}
+
+.logo img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.menu li {
+  padding: 15px 15px;
+  font-size: 14px;
+}
+.toggle {
+  font-size: 30px;
+  display: none;
+}
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  z-index: 10;
+  top: 4.5px;
+  right: 1px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.searchbox {
+  position: absolute;
+  right: 100%;
+  height: 5%;
+  width: 100%;
+  display: flex;
+  background: #000000;
+  align-items: center;
+  padding: 0 0px;
+  transition: 0.5s ease-in-out;
+}
+.searchbox.active {
+  right: 0;
+}
+
+.searchbox input {
+  width: 98%;
+  border: none;
+  outline: none;
+  height: 65px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #000000;
+  border-bottom: 0.5px solid #474646;
+}
+.searchbtn {
+  position: relative;
+  left: 20px;
+}
+.searchbtn.active {
+  left: 0;
+}
+.closbtn {
+  opacity: 0;
+  visibility: hidden;
+}
+.closbtn.active {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .searchbtn {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+  .menu.active,
+  .toggle {
+    display: block;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
+.blog-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman",
+    serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #f3efef;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.grow img {
+  transition: 1s ease;
+}
+
+.grow img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background: #182130;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
