@@ -134,6 +134,7 @@ WEB-PROJECT-MANHWA-MANGA-WEBSITE/
 ├── stylee1.css
 ├── blog.css
 └── manhwa.sql
+```
 ## Technologies
 
 ### Front-End
@@ -195,15 +196,15 @@ git clone https://github.com/samaabosair/WEB-PROJECT-MANHWA-MANGA-WEBSITE.git
 
 5. Create a database named:
 
-
-```text
-Manhwa ```
+``` Manhwa ```
 6. Import the provided manhwa.sql file.
 7. Check the database configuration in config.php and make sure it matches your local MySQL settings.
 8. Open the application through the local server:
+
 ```
 http://localhost/WEB-PROJECT-MANHWA-MANGA-WEBSITE/ 
 ```
+
 ## Purpose
 
 This project was developed to practice **Full-Stack Web Development** using PHP and MySQL.
